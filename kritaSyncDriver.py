@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import *
 from krita import *
 from PyQt5.QtGui import QFont
 
-
+# Dialog de visualização do upload e Download
 
 class KritaSyncDriverDock(DockWidget):
 
