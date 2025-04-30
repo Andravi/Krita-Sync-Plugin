@@ -5,6 +5,25 @@ from queue import Queue, Empty
 
 progress = {}
 
+class RCloneHandler():
+    def __init__(self, idfolder, folder_path, name_connection = "remoteKrita"):
+        self.id_root_folder = idfolder
+        self.folder_path = folder_path
+        self.name_connection = name_connection
+        
+        self.__init_conection()
+    
+    def __init_conection(self):
+        # Cadastro
+        # Por terminal -> automatizar
+        ...
+    
+    def pull_files(self):
+        ...
+    
+    
+    def push_files(self):
+        ...
 
 def parse_rclone_progress(line, progress):
     """Extrai os dados de progresso da saída do Rclone."""

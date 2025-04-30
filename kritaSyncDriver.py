@@ -14,12 +14,14 @@ class KritaSyncDriverDock(DockWidget):
         
         buttonSyncWithDriver = QPushButton("sincronizar com Driver", mainWidget)
         buttonSaveInDriver = QPushButton("Salvar no Driver", mainWidget)
+        
         e1 = QLineEdit()
         e1.setFont(QFont("Arial",12))
 
         buttonSyncWithDriver.clicked.connect(self.copyFromDriver)
         buttonSaveInDriver.clicked.connect(self.copyToDriver)
         mainWidget.setLayout(QVBoxLayout())
+        
         mainWidget.layout().addWidget(e1)
         mainWidget.layout().addWidget(buttonSyncWithDriver)
         mainWidget.layout().addWidget(buttonSaveInDriver)
